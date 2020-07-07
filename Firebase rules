@@ -1,0 +1,22 @@
+{
+  "rules": {
+    "Users":{
+      		"$user_id":{
+        		".read": "auth.uid == $user_id",
+        		".write": "auth.uid == $user_id",
+      		},
+            "Ratings":{
+          		".read": true,
+          		".write": true 
+      		},
+            "Jobs":{
+              ".read": true,
+              ".write": true 
+            },
+              "Jobs Revolution":{
+                ".read": true,
+                ".write": true 
+            }
+        }   
+    }
+}
